@@ -26,7 +26,8 @@ a {
 }
 .navbar-brand {
   height: 100%;
-  font-size: 1.0618em;
+  // font-size: 1.0618em;
+  font-size: 1em;
   i {
     margin-right: 3px;
     color: deeppink;
@@ -34,7 +35,6 @@ a {
 }
 .navbar-links {
   position: relative;
-  // border: 1px solid rgb(236, 129, 147);
   width: 100%;
   overflow: hidden;
 }
@@ -63,6 +63,23 @@ a {
   white-space: nowrap;
 }
 .navbar-user-menu {
-  text-align: right;
-
+  text-align: left;
+  font-family: $roboto;
+  font-size: 0.94em;
+}
+.navbar-user-menu-username-label {
+  text-align: left;
+}
+.navbar-user-menu-username-input {
+  width: 420px;
+}
+.navbar-user-menu-password-label {
+  // justify-content: flex-end;
+}
+.navbar-user-menu-password-input {
+  width: 420px;
+}
+.navbar-user-menu-submit {
+  right: 0;
+  justify-content: flex-end;
 }
