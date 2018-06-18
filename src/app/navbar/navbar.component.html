@@ -47,7 +47,13 @@
         </div>
         <div *ngIf="!loginForm.valid && loginForm.touched"
              class="error message">Sign-up is incomplete</div>
-        <button type="submit" class="btn btn-primary navbar-user-menu-submit">Submit</button>
+        <div class="login-footer">
+          <div class="form-check d-inline-flex">
+            <input type="checkbox" class="form-check-input" id="rememberCheck">
+            <label class="form-check-label" for="rememberCheck">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary navbar-user-menu-submit float-right">Submit</button>
+        </div>
       </form>
       <!--
       <a class="dropdown-item" href="#">Username:</a>
